@@ -11,5 +11,5 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: Run ShellCheck
-        uses: docker://koalaman/shellcheck
+        run: shellcheck mkRAMDisk.sh
 
