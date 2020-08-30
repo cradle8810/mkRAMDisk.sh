@@ -29,19 +29,12 @@ if [ ! -e ${RDIR} ]; then
   DEVICENAME=$(diskutil partitionDisk "${DISKBLOCK}" 1 GPT APFS "${VOLNAME}" "100%" | \
 		   grep "Formatting" | \
 		   awk '{print $2}' )
-  
-  #mounting ramdiskblock
-  #DISKMP=`diskutil erasevolume jhfs+ RAMDisk ${DISKBLOCK} | grep "Initialized"| awk '{print $2}'`
-  
 
   #RAMDiskがマウントされていない場合、明示的にマウントする
   mountRDir="$(mount | grep "${DEVICENAME}")"
   if [ "${mountRDir}" ]; then
       mount "${mountRDir}" "${RDIR}"
   fi
-
-  #diskutil enableOwnership ${RDIR}
-
 
   ##################
   # フォルダの作成   #
@@ -50,14 +43,14 @@ if [ ! -e ${RDIR} ]; then
       echo "No RAMDisk Found."
       exit 3
   fi
-  
+
   #ログ
   mkdir "${RDIR}/.logs"
   chmod 777 "${RDIR}/.logs"
-  
+
   #Xcodeのキャッシュ
   mkdir "${RDIR}/.XCODEDebug/"
-  
+
   # ${TMPDIR}
   ## ※ Safariのブックマークが変更されない(ロールバックする)不具合が発生するようになったので、
   ##    もはや${TMPDIR}はRAMDiskに移動すべきではない
@@ -66,16 +59,15 @@ if [ ! -e ${RDIR} ]; then
   chmod 777 "${RDIR}/.tmpdirT"
 
   # /tmp用
-    mkdir "${RDIR}/.tmp"
+  mkdir "${RDIR}/.tmp"
 
-  
   # Saved Application State
   mkdir "${RDIR}/.Saved Application State"
   chmod 777 "${RDIR}/.Saved Application State"
-  
+
   #Spotlight Token
   mkdir "${RDIR}/.SpotlightToken"
-  
+
   #######################
   # Application Caches  #
   #######################
@@ -83,68 +75,68 @@ if [ ! -e ${RDIR} ]; then
 
   #iCloud Photo?
   mkdir -p "${CACHEDIR}/com.apple.iLifeMediaBrowser.ILPhotosTranscodeCache"
-  
+
   #QuickLook
   mkdir -p "${CACHEDIR}/QuickLook"
   mkdir -p "${CACHEDIR}/QuickLook32"
   mkdir -p "${CACHEDIR}/qlmanage"
-  
+
   chmod 777 "${CACHEDIR}/QuickLook"
   chmod 777 "${CACHEDIR}/QuickLook32"
   chmod 777 "${CACHEDIR}/qlmanage"
-    
+
   #iconservices
   mkdir "${CACHEDIR}/com.apple.iconservices"
 
   #nsurlsessiond
   mkdir "${CACHEDIR}/com.apple.nsurlsessiond"
-  
+
   #Appstore
   mkdir -p "${CACHEDIR}/com.apple.appstore"
-  
+
   #RDP
   mkdir -p "${CACHEDIR}/Microsoft Remote Desktop Beta"
-  
+
   #Photo
   mkdir -p "${CACHEDIR}/com.apple.Photos"
   mkdir -p "${CACHEDIR}/Photos"
   mkdir -p "${CACHEDIR}/Photos_Cache.noindex"
-  
+
   #Safari
   mkdir -p "${CACHEDIR}/Metadata"
   mkdir -p "${CACHEDIR}/com.apple.safari"
   mkdir -p "${CACHEDIR}/Safari_CloudKit"
   mkdir -p "${CACHEDIR}/Safari"
-  
+
   #Apps
   mkdir -p "${CACHEDIR}/Finder"
   mkdir -p "${CACHEDIR}/fsCachedData"
   mkdir -p "${CACHEDIR}/com.apple.Automator"
-  
+
   #Chrome
   mkdir -p "${CACHEDIR}/Chrome"
   mkdir -p "${CACHEDIR}/Chrome/Sync Data"
   mkdir -p "${CACHEDIR}/Chrome/Session Storage"
   mkdir -p "${CACHEDIR}/Chrome/blob_storage"
-  
+
   #Firefox
   mkdir -p "${CACHEDIR}/Firefox"
-  
+
   #iMazing
   mkdir -p "${CACHEDIR}/iMazing"
-  
+
   #HomeBrew
   mkdir -p "${CACHEDIR}/Homebrew"
-  
+
   #Autosave
   mkdir -p "${CACHEDIR}/Autosave Information"
-  
+
   #lsd
   mkdir -p "${CACHEDIR}/lsd"
-  
+
   #Photosweeper
   mkdir -p "${CACHEDIR}/com.overmacs.photosweeperpaddle"
-  
+
   #Evernote
   mkdir -p "${CACHEDIR}/com.evernote.Evernote"
 
@@ -154,7 +146,6 @@ if [ ! -e ${RDIR} ]; then
   # Discord for Mac
   mkdir -p "${CACHEDIR}/discord/Cache"
 fi
-
 
 
 #Clean if old Ramdisk area exist.
