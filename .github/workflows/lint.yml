@@ -10,6 +10,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: which
+        run: which shellcheck
+      - name: Shellcheck Version Check
+        run: shellcheck -V
       - name: Run ShellCheck
         run: shellcheck mkRAMDisk.sh
 
