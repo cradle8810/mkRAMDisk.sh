@@ -5,10 +5,10 @@ on: [push, pull_request]
 jobs:
   shellcheck:
     runs-on: ubuntu-18.04
-    container:
-      image: koalaman/shellcheck
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: Shellcheck Version Check
+        run: shellcheck -V
       - name: Run ShellCheck
-        uses: koalaman/shellcheck
+        run: shellcheck mkRAMDisk.sh
