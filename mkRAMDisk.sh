@@ -145,6 +145,9 @@ if [ ! -e ${RDIR} ]; then
 
   # Discord for Mac
   mkdir -p "${CACHEDIR}/discord/Cache"
+
+  # Ansible cache
+  mkdir -p "${CACHEDIR}/ansible"
 fi
 
 
