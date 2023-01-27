@@ -147,7 +147,8 @@ if [ ! -e ${RDIR} ]; then
   mkdir -p "${CACHEDIR}/discord/Cache"
 
   # Ansible cache
-  mkdir -p "${CACHEDIR}/ansible"
+  mkdir -p "${CACHEDIR}/ansible/cp"
+  mkdir -p "${CACHEDIR}/ansible/tmp"
 fi
 
 
