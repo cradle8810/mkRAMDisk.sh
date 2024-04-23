@@ -1,12 +1,7 @@
 #!/bin/sh
 
-MKRAMDISK="/Users/hayato/Scripts/mkRAMDisk.sh"
 RDIR="/Volumes/RAMDisk"
 
-if [ ! -e "${MKRAMDISK}" ]; then
-   echo "No mkramdisk found." >&2
-   exit 1
-fi
 if [ ! -e "${RDIR}" ]; then
    echo "No RAMDisk found." >&2
    exit 2
