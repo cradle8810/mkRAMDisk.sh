@@ -43,7 +43,7 @@ jobs:
 
         - name: Run goss (mkRAMDisk.sh)
           run: |
-            /tmp/goss -g goss_mount.yaml validate
+            /tmp/goss -g tests/goss_mount.yaml validate
           env:
             GOSS_USE_ALPHA: 1
 
@@ -55,6 +55,6 @@ jobs:
 
         - name: Run goss (ejectRAMDisk.sh)
           run: |
-            /tmp/goss -g goss_eject.yaml validate
+            /tmp/goss -g tests/goss_eject.yaml validate
           env:
             GOSS_USE_ALPHA: 1
