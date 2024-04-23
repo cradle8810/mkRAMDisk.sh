@@ -1,0 +1,176 @@
+file:
+    /Volumes/RAMDisk:
+        exists: true
+        mode: "0775"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.Saved Application State:
+        exists: true
+        mode: "0777"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.XCODEDebug:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Autosave Information:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Chrome:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Finder:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Firefox:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Homebrew:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Metadata:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Microsoft Remote Desktop Beta:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Photos:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Photos_Cache.noindex:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/QuickLook:
+        exists: true
+        mode: "0777"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/QuickLook32:
+        exists: true
+        mode: "0777"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Safari:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/Safari_CloudKit:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/ansible:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.Automator:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.Photos:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.appstore:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.iLifeMediaBrowser.ILPhotosTranscodeCache:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.iconservices:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.nsurlsessiond:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.apple.safari:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.evernote.Evernote:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/com.overmacs.photosweeperpaddle:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/discord:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/fsCachedData:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/iMazing:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/lsd:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.cache/qlmanage:
+        exists: true
+        mode: "0777"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.logs:
+        exists: true
+        mode: "0777"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.tmp:
+        exists: true
+        mode: "0755"
+        filetype: directory
+        contents: []
+    /Volumes/RAMDisk/.tmpdirT:
+        exists: true
+        mode: "0777"
+        filetype: directory
+        contents: []
